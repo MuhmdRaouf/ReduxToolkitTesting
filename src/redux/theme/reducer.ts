@@ -2,6 +2,7 @@ import type { AppDispatch, RootState } from '../../types/redux';
 import { createReducer } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 
+import { DeviceUtils } from '../../utils/DeviceUtils';
 import { toggleTheme } from './actions';
 import { themePersistConfig } from './persistor';
 
@@ -10,7 +11,7 @@ interface themeActionsReducerProps {
 }
 
 export const initialState: themeActionsReducerProps = {
-  isDark: true,
+  isDark: DeviceUtils.isDeviceDarkMode(),
 };
 
 const themeActionsReducer = createReducer(initialState, (builder) => {

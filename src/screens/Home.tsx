@@ -1,18 +1,18 @@
 import type { RootState } from '../types/redux';
 import { Button, Layout, Spinner, Text } from '@ui-kitten/components';
 import React, { useCallback, useEffect } from 'react';
-import { Dimensions, Image, StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { Gallery } from '../components/Gallery';
+import { Header } from '../components/Header';
 import { fetchPicture, deletePicture } from '../redux/gallery/actions';
 
-export const { width } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 export const Home = () => {
   const dispatch = useDispatch();
-  const defaultPicture =
-    'https://akveo.github.io/react-native-ui-kitten/docs/assets/playground-build/static/media/icon.a78e4b51.png';
-  const { picture, isFetching, fetchErrorMessage } = useSelector((state: RootState) => state.gallery);
+  const { isFetching, fetchErrorMessage } = useSelector((state: RootState) => state.gallery);
 
   const fetchPictureHandle = useCallback(() => {
     const pictureRepo = 'https://picsum.photos/v2/list';
@@ -20,7 +20,7 @@ export const Home = () => {
   }, [dispatch]);
 
   const ResetPictureHandle = useCallback(() => {
-    dispatch(deletePicture(defaultPicture));
+    dispatch(deletePicture());
   }, [dispatch]);
 
   const brokenFetchPictureHandle = useCallback(() => {
@@ -33,10 +33,9 @@ export const Home = () => {
   }, [fetchPictureHandle]);
 
   return (
-    <Layout style={styles.container}>
-      <View style={styles.pictureContainer}>
-        {isFetching ? <Spinner size="giant" /> : <Image style={styles.picture} source={{ uri: picture }} />}
-      </View>
+    <Layout style={styles.container} level="3">
+      <Header />
+      <View style={styles.pictureContainer}>{isFetching ? <Spinner size="giant" /> : <Gallery />}</View>
       {fetchErrorMessage && (
         <Text status="danger" category="h5">
           {fetchErrorMessage}
@@ -47,10 +46,10 @@ export const Home = () => {
           <Text>Fetch new picture</Text>
         </Button>
         <Button style={styles.button} onPress={ResetPictureHandle}>
-          <Text>Reset Picture</Text>
+          <Text>Reset picture</Text>
         </Button>
         <Button style={styles.button} onPress={brokenFetchPictureHandle}>
-          <Text>Broken Button</Text>
+          <Text>Broken button</Text>
         </Button>
       </View>
     </Layout>
@@ -68,12 +67,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  picture: {
-    width: width * 0.8,
-    height: width * 0.8,
-    margin: 10,
-    borderRadius: 10,
-  },
+
   buttonContainer: {
     width: '100%',
     justifyContent: 'space-evenly',

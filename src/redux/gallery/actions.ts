@@ -27,6 +27,6 @@ export const fetchPicture = createAsyncThunk<fetchPictureReturn, fetchPictureArg
   },
 );
 
-export const deletePicture = createAction('DELETE_PICTURE', (picture: string) => {
-  return { payload: { picture } };
+export const deletePicture = createAction('DELETE_PICTURE', () => {
+  return { payload: { picture: null } };
 });

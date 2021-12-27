@@ -42,10 +42,10 @@ describe('Gallery', () => {
   it('should set picture URL to placeholder url', () => {
     expect.hasAssertions();
 
-    const picture = 'Placeholder Picture';
-    const STATE = { ...initialState, picture: faker.datatype.uuid() };
+    const picture = null;
     const EXPECTED_STATE = { ...initialState, picture };
+    const STATE = { ...initialState, picture: faker.datatype.uuid() };
 
-    expect(EXPECTED_STATE).toStrictEqual(galleryReducer(STATE, deletePicture(picture)));
+    expect(EXPECTED_STATE).toStrictEqual(galleryReducer(STATE, deletePicture()));
   });
 });
