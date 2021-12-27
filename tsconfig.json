@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* Strict Type-Checking Options */
+    "strict": true,                              /* Enable all strict type-checking options. */
+    "allowUnreachableCode": false,               /* Report errors for Unreachable Code. */
+    "allowUnusedLabels": false,                  /* Report errors for Unused Labels. */
+    "alwaysStrict": true,                        /* Parse in strict mode and emit "use strict" for each source file. */
+    "noFallthroughCasesInSwitch": true,          /* Report errors for fallthrough cases in switch statement. */
+    // "noImplicitAny": true,                       /* Raise error on expressions and declarations with an implied 'any' type. */
+    "noImplicitOverride": true,                  /* Report errors if 'override' modifier missing when override parent method */
+    "noImplicitReturns": true,                   /* Report error when not all code paths in function return a value. */
+    "noImplicitThis": true,                      /* Raise error on 'this' expressions with an implied 'any' type. */
+    // "noPropertyAccessFromIndexSignature": true,  /* Report errors when unknown field uses dot syntax instead of indexed syntax */
+    "noUnusedLocals": true,                      /* Report errors on unused locals. */
+    "noUnusedParameters": true,                  /* Report errors on unused parameters. */
+    "strictBindCallApply": true,                 /* Report errors when  built-in methods of functions call, bind, and apply are invoked with incorrect argument for the underlying function: */
+    "strictFunctionTypes": true,                 /* Enable strict checking of function types. */
+    "strictNullChecks": true,                    /* Enable strict null checks. */
+    "strictPropertyInitialization": true,        /* Enable strict checking of property initialization in classes. */
+
+    /* Module Resolution Options */
+    "module": "commonjs",                        /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "moduleResolution": "node",                  /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "resolveJsonModule": true,                   /* Allows importing modules with a ‘.json’ extension. */
+
+    /* Emit Options */
+    "declaration": true,                         /* Generate .d.ts files for every TypeScript or JavaScript file inside your project. */
+    "declarationDir": "./types",                 /* Specify the location where .d.ts files should locate. */
+    "declarationMap": true,                      /* Generates a source map for .d.ts. */
+    "importsNotUsedAsValues": "error",           /* Report errors when a value import is only used as a type. */
+    "newLine": "LF",                             /* Specify the end of line sequence to be used when emitting files: ‘CRLF’ (dos) or ‘LF’ (unix). */
+    "noEmit": false,                             /* Do not emit outputs. */
+    "noEmitOnError": true,                       /* Do not emit compiler output files like JavaScript source code, source-maps or declarations if any errors were reported. */
+    "removeComments": true,                      /* Do not emit comments to output. */
+
+    /* JavaScript Support Options */
+    "allowJs": true,                             /* Allow javascript files to be compiled. */
+    "checkJs": true,                             /* Report errors in .js files. */
+
+    /* Editor Support Options */
+
+    /* Interop Constraints Options */
+    "allowSyntheticDefaultImports": true,        /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true,                     /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "forceConsistentCasingInFileNames": true,    /* Force Consistent Casing In File Names. */
+    "isolatedModules": true,                     /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+
+    /* Backwards Compatibility Options */
+
+    /* Language and Environment Options */
+    "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
+    "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
+    "jsx": "react-native",                       /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],    /* Specify library files to be included in the compilation. */
+    "target": "ESNext",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNext'. */
+
+    /* Projects Options */
+
+    /* Output Formatting Options */
+    "noErrorTruncation": true,                   /* Do not truncate error messages. */
+
+    /* Completeness Options */
+    "skipLibCheck": true,                        /* Skip type checking of declaration files. */
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js", "react-native.config.js"],
+}
