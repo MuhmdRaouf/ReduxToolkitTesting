@@ -10,7 +10,8 @@ export const { width } = Dimensions.get('window');
 
 export const Home = () => {
   const dispatch = useDispatch();
-  const defualtPicture = 'https://reactnative.dev/img/tiny_logo.png';
+  const defaultPicture =
+    'https://akveo.github.io/react-native-ui-kitten/docs/assets/playground-build/static/media/icon.a78e4b51.png';
   const { picture, isFetching, fetchErrorMessage } = useSelector((state: RootState) => state.gallery);
 
   const fetchPictureHandle = useCallback(() => {
@@ -19,7 +20,7 @@ export const Home = () => {
   }, [dispatch]);
 
   const ResetPictureHandle = useCallback(() => {
-    dispatch(deletePicture(defualtPicture));
+    dispatch(deletePicture(defaultPicture));
   }, [dispatch]);
 
   const brokenFetchPictureHandle = useCallback(() => {
