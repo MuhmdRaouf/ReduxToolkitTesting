@@ -33,7 +33,9 @@ export const Home = () => {
 
   return (
     <Layout style={styles.container}>
-      {isFetching ? <Spinner size="giant" /> : <Image style={styles.avatar} source={{ uri: picture }} />}
+      <View style={styles.pictureContainer}>
+        {isFetching ? <Spinner size="giant" /> : <Image style={styles.picture} source={{ uri: picture }} />}
+      </View>
       {fetchErrorMessage && (
         <Text status="danger" category="h5">
           {fetchErrorMessage}
@@ -57,18 +59,25 @@ export const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-evenly',
+    justifyContent: 'center',
     alignItems: 'center',
   },
-  avatar: {
+  pictureContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  picture: {
     width: width * 0.8,
     height: width * 0.8,
-    margin: 8,
+    margin: 10,
+    borderRadius: 10,
   },
   buttonContainer: {
     width: '100%',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    marginBottom: 25,
   },
   button: {
     width: width / 2,

@@ -1,3 +1,375 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Home /> should match <Home /> snapshot 1`] = `null`;
+exports[`<Home /> should match <Home /> snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    appearance="default"
+    level="1"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#222B45",
+        },
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Size {
+            "height": 32,
+            "width": 32,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "bottom": 0,
+              "height": 32,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transform": Array [
+                Object {
+                  "rotate": "45deg",
+                },
+              ],
+              "width": 32,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                undefined,
+                Size {
+                  "height": 16,
+                  "width": 32,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 32,
+                  "transform": Array [
+                    Object {
+                      "rotate": "-165deg",
+                    },
+                  ],
+                  "width": 32,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "overflow": "hidden",
+                    },
+                    Size {
+                      "height": 16,
+                      "width": 32,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#3366FF",
+                        "borderRadius": 16,
+                        "borderWidth": 4.5,
+                        "height": 32,
+                        "width": 32,
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "bottom": 0,
+              "height": 32,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transform": Array [
+                Object {
+                  "rotate": "45deg",
+                },
+              ],
+              "width": 32,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "top": 16,
+                },
+                Size {
+                  "height": 16,
+                  "width": 32,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 32,
+                  "transform": Array [
+                    Object {
+                      "translateY": -16,
+                    },
+                    Object {
+                      "rotate": "345deg",
+                    },
+                  ],
+                  "width": 32,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "overflow": "hidden",
+                    },
+                    Size {
+                      "height": 16,
+                      "width": 32,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderColor": "#3366FF",
+                        "borderRadius": 16,
+                        "borderWidth": 4.5,
+                        "height": 32,
+                        "width": 32,
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "space-evenly",
+          "marginBottom": 25,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#3366FF",
+            "borderColor": "#3366FF",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 10,
+            "minHeight": 40,
+            "minWidth": 40,
+            "opacity": 1,
+            "paddingHorizontal": 10,
+            "paddingVertical": 12,
+            "width": 375,
+          }
+        }
+      >
+        <Text
+          appearance="default"
+          category="p1"
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 15,
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "marginHorizontal": 10,
+              },
+            ]
+          }
+        >
+          Fetch new picture
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#3366FF",
+            "borderColor": "#3366FF",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 10,
+            "minHeight": 40,
+            "minWidth": 40,
+            "opacity": 1,
+            "paddingHorizontal": 10,
+            "paddingVertical": 12,
+            "width": 375,
+          }
+        }
+      >
+        <Text
+          appearance="default"
+          category="p1"
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 15,
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "marginHorizontal": 10,
+              },
+            ]
+          }
+        >
+          Reset Picture
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#3366FF",
+            "borderColor": "#3366FF",
+            "borderRadius": 4,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 10,
+            "minHeight": 40,
+            "minWidth": 40,
+            "opacity": 1,
+            "paddingHorizontal": 10,
+            "paddingVertical": 12,
+            "width": 375,
+          }
+        }
+      >
+        <Text
+          appearance="default"
+          category="p1"
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 15,
+                "fontWeight": "400",
+              },
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "System",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "marginHorizontal": 10,
+              },
+            ]
+          }
+        >
+          Broken Button
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

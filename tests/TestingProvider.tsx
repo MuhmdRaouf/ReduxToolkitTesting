@@ -1,18 +1,20 @@
 import type { ReactNode } from 'react';
 import React from 'react';
+import type { Persistor } from 'redux-persist';
 
 import { NavigationProvider } from '../src/providers/NavigationProvider';
 import { ReduxProvider } from '../src/providers/ReduxProvider';
 import { ThemeProvider } from '../src/providers/ThemeProvider';
 
 interface TestingProviderProps {
-  preloadedState?: any;
+  store: any;
+  persistor: Persistor;
   children: ReactNode;
 }
 
-export const TestingProvider = ({ children }: TestingProviderProps) => {
+export const TestingProvider = ({ store, persistor, children }: TestingProviderProps) => {
   return (
-    <ReduxProvider>
+    <ReduxProvider store={store} persistor={persistor}>
       <ThemeProvider>
         <NavigationProvider>{children}</NavigationProvider>
       </ThemeProvider>
